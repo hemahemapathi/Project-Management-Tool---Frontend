@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.create-report-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-report-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px var(--shadow-color);
+}
+
+.create-report-container h2 {
+  font-size: 3rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.create-report-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}
+
+.create-report-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown-toggle:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+  background-color: #fff;
+}
+
+.dropdown-menu {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.dropdown-item {
+  padding: 0.75rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--background-color);
+}
+
+.progress-fields,
+.task-completion-fields,
+.timeline-fields,
+.budget-utilization-fields,
+.task-update-fields {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 5px 15px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-fields:hover,
+.task-completion-fields:hover,
+.timeline-fields:hover,
+.budget-utilization-fields:hover,
+.task-update-fields:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+.progress-fields label,
+.task-completion-fields label,
+.timeline-fields label,
+.budget-utilization-fields label,
+.task-update-fields label {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.progress-fields input,
+.task-completion-fields input,
+.timeline-fields input,
+.budget-utilization-fields input,
+.task-update-fields input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+}
+
+.progress-fields input:focus,
+.task-completion-fields input:focus,
+.timeline-fields input:focus,
+.budget-utilization-fields input:focus,
+.task-update-fields input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+  background-color: #fff;
+}
+
+.milestone-item,
+.major-expense-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px var(--shadow-color);
+  transition: all 0.3s ease;
+}
+
+.milestone-item:hover,
+.major-expense-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button.create {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+button.create:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(52, 152, 219, 0.3);
+}
+
+button.delete {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(231, 76, 60, 0.3);
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(52, 152, 219, 0.3);
+}
+
+.message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #e8f8f5;
+  color: #27ae60;
+  border-left: 5px solid #2ecc71;
+}
+
+@media (max-width: 768px) {
+  .create-report-container {
+    padding: 2rem;
+  }
+
+  .create-report-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .form-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-fields input,
+  .task-completion-fields input,
+  .timeline-fields input,
+  .budget-utilization-fields input,
+  .task-update-fields input {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-report-container {
+    padding: 1.5rem;
+  }
+
+  .create-report-container h2 {
+    font-size: 2rem;
+  }
+
+  .progress-fields input,
+  .task-completion-fields input,
+  .timeline-fields input,
+  .budget-utilization-fields input,
+  .task-update-fields input {
+    font-size: 0.9rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1.1rem;
+  }
+
+  .progress-fields,
+  .task-completion-fields,
+  .timeline-fields,
+  .budget-utilization-fields,
+  .task-update-fields,
+  .milestone-item,
+  .major-expense-item {
+    padding: 1rem;
+  }
+}

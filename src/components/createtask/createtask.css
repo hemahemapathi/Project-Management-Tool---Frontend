@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.create-task-form {
+  font-family: 'Roboto', sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-task-form h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.create-task-form input,
+.create-task-form textarea,
+.create-task-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-task-form input:focus,
+.create-task-form textarea:focus,
+.create-task-form select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.create-task-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-task-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.create-task-form button[type="submit"], .create-task-form .cancel-button {
+  width: 48%;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.create-task-form button[type="submit"] {
+  background-color: #28a745;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.create-task-form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+.create-task-form button[type="submit"]:active {
+  background-color: #1e7e34;
+}
+
+.create-task-form button[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.create-task-form .cancel-button {
+  background-color: #ff4d4d;
+  margin-right: 0;
+}
+
+.create-task-form .cancel-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(255, 77, 77, 0.3);
+}
+
+.create-task-form .cancel-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.create-task-form .cancel-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.5);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.error-message,
+.notification-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.notification-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.create-task-button {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-task-button:hover {
+  background-color: #218838;
+}
+
+.create-task-button:active {
+  background-color: #1e7e34;
+}
+
+.create-task-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.create-task-button.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .create-task-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .create-task-form h2 {
+    font-size: 1.75rem;
+  }
+
+  .create-task-form input,
+  .create-task-form textarea,
+  .create-task-form select,
+  .create-task-form button[type="submit"],
+  .create-task-form .cancel-button {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-task-form {
+    padding: 1rem;
+  }
+
+  .create-task-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .create-task-form input,
+  .create-task-form textarea,
+  .create-task-form select,
+  .create-task-form button[type="submit"],
+  .create-task-form .cancel-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

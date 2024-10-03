@@ -1,0 +1,300 @@
+.project-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .create-project-button {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .create-project-button button {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  
+  .create-project-button button:hover {
+    background-color: #0056b3;
+  }
+  
+  .project-list-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-item {
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+  }
+  
+  .project-item[data-status="Not Started"] {
+    background-color: #fff3cd;
+  }
+  
+  .project-item[data-status="In-Progress"] {
+    background-color: #cce5ff;
+  }
+  
+  .project-item[data-status="Completed"] {
+    background-color: #d4edda;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .project-status {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    align-self: flex-start;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .project-status[data-status="Not Started"] {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .project-status[data-status="In-Progress"] {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  .project-status[data-status="Completed"] {
+    background-color: #28a745;
+    color: #fff;
+  }
+  .project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+    font-family: 'Merriweather', serif;
+  }
+  
+  .project-end-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .project-remaining-days {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #28a745;
+    margin-bottom: 0.5rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .project-overdue {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 0.75rem;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .project-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    padding-top: 1.5rem;
+  }
+  
+  .edit-button, .delete-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .edit-button {
+    background-color: #17a2b8;
+    color: white;
+    margin-right: 0.75rem;
+  }
+  
+  .edit-button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .project-list-items {
+      grid-template-columns: 1fr;
+    }
+    
+    .project-description {
+      font-size: 0.95rem;
+    }
+    
+    .project-end-date,
+    .project-remaining-days,
+    .project-overdue {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .project-description {
+      font-size: 0.9rem;
+    }
+    
+    .project-end-date,
+    .project-remaining-days,
+    .project-overdue {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-toggle {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: 1px solid #0056b3;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  .dropdown-toggle:hover {
+    background-color: #0056b3;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: auto;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #e9ecef;
+  }
+
+  @media (max-width: 576px) {
+    .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0.5rem;
+      background-color: transparent;
+      border: 0;
+      box-shadow: none;
+    }
+
+    .dropdown-item {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .project-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .project-list-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .project-list-actions .dropdown {
+    margin-left: 1rem;
+  }

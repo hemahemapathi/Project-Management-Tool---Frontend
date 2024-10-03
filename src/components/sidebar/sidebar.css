@@ -1,0 +1,124 @@
+.sidebar {
+  position: fixed;
+  left: -300px;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #34495e;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4a6278 #34495e;
+  font-family: 'Arial', sans-serif;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #34495e;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #4a6278;
+  border-radius: 3px;
+}
+
+.sidebar.open {
+  left: 0;
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  font-family: 'Arial', sans-serif;
+}
+
+.close-btn:hover {
+  color: #3498db;
+  transform: rotate(90deg);
+}
+
+.sidebar nav {
+  padding: 30px 20px;
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar nav ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li:last-child {
+  border-bottom: none;
+}
+
+.sidebar nav ul li:hover {
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.sidebar nav ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.sidebar nav ul li a:hover {
+  color: #3498db;
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    left: -100%;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .close-btn {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 250px;
+    left: -250px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sidebar,
+  .close-btn,
+  .sidebar nav ul li a {
+    transition: none;
+  }
+}

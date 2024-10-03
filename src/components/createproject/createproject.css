@@ -1,0 +1,250 @@
+.create-project-form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-project-form h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.create-project-form input,
+.create-project-form textarea,
+.create-project-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-project-form input:focus,
+.create-project-form textarea:focus,
+.create-project-form select:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.create-project-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-project-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.65rem auto;
+}
+
+.team-members-section {
+  margin-top: 2rem;
+}
+
+.team-member-input {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.team-member-input select {
+  flex-grow: 1;
+}
+
+.cancel-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(255, 77, 77, 0.3);
+}
+
+.cancel-button:active {
+  background-color: #e60000;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.cancel-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.5);
+}
+
+.team-member-input button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.team-member-input button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
+}
+
+.team-member-input button:active {
+  background-color: #1e7e34;
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.team-member-input button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
+
+.team-members-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.team-members-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.team-members-list li:hover {
+  background-color: #dee2e6;
+}
+
+.team-members-list li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.team-members-list li button:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(220, 53, 69, 0.3);
+}
+
+.team-members-list li button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.create-project-form button[type="submit"], .create-project-form .cancel-button {
+  width: 48%;
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+.create-project-form button[type="submit"] {
+  background-color: #007bff;
+}
+
+.create-project-form button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+.create-project-form button[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.create-project-form .cancel-button {
+  background-color: #ff4d4d;
+  margin-right: 0;
+}
+
+.create-project-form .cancel-button:hover {
+  background-color: #ff3333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(255, 77, 77, 0.3);
+}
+
+.create-project-form .cancel-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.error-message,
+.notification-message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.notification-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+@media (max-width: 768px) {
+  .create-project-form {
+    padding: 1rem;
+  }
+
+  .team-member-input {
+    flex-direction: column;
+  }
+
+  .team-member-input button {
+    width: 100%;
+  }
+
+  .create-project-form button[type="submit"],
+  .create-project-form .cancel-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

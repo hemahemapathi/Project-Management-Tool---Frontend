@@ -1,0 +1,116 @@
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  max-width: 800px;
+  text-align: center;
+  color: #333;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+}
+
+.feature {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.cta-buttons button {
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons button:first-child {
+  background-color: #4682B4;
+  color: #fff;
+}
+
+.cta-buttons button:last-child {
+  background-color: transparent;
+  border: 2px solid #4682B4;
+  color: #4682B4;
+}
+
+.cta-buttons button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* New theme styles */
+.theme-light {
+  background: linear-gradient(135deg, #F0F8FF, #E6E6FA, #FFF0F5, #F0FFF0, #F5F5DC);
+}
+
+.theme-nature {
+  background: linear-gradient(135deg, #E6F3E6, #F0FFF0, #E6F3E6);
+}
+
+.theme-sunset {
+  background: linear-gradient(135deg, #FFF0F5, #FFE4E1, #FFF0F5);
+}
+
+.theme-ocean {
+  background: linear-gradient(135deg, #E0F8FF, #F0FFFF, #E0F8FF);
+}
