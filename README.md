@@ -1,7 +1,9 @@
-1.  Overview  :
+  Project Management Tool
+ 
+ 1.  Overview  :
            - The frontend of the Project Management Tool is crafted with React.js and Bootstrap to create a user-friendly, responsive interface. It enables users to manage projects and collaborate effectively within teams.
 
-2. Key Features  :
+ 2. Key Features  :
      User Authentication
            -  Login/Registration: Users can securely register and log in, with proper validation messages for input errors.
      Task and Project Management
@@ -29,15 +31,15 @@
            -  Inline Help and Tooltips: Provides users with contextual help and tooltips to guide them through various functionalities.
 
 
-Access the Application  :
+ 3. Access the Application  :
            -  Open your browser and navigate to http://localhost:3000.
-Contribution Guidelines :
+ 4. Contribution Guidelines :
            -  We welcome contributions to the frontend! If you want to enhance the user interface or add new features:
            -  Fork the repository.
            -  Implement your changes.
            -  Submit a pull request with a detailed description of your enhancements.
-License  :
+ 5. License  :
            -  This project is licensed under the MIT License. See the LICENSE file for more information.
 
-Acknowledgments  :
+ 6. Acknowledgments  :
            -  Thanks to the open-source community for their contributions and support in building this application.
