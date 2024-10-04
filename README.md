@@ -1,4 +1,4 @@
-  Project Management Tool
+ #  PROJECT MANAGEMENT TOOL
  
  1.  Overview  :
     
@@ -18,7 +18,7 @@
 
         Example: If your name is John, your email should be john@manager.com
 
- 4. For Team Members :
+      # For Team Members :
 
       -  Use the format: yourname@example.com
 
