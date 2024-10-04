@@ -12,14 +12,13 @@
  3. LOGIN INSTRUCTIONS :
 
      Please follow the login instructions below based on your role in the system:
-
-       # For Managers:
+       For Managers :
 
        -   Use the format: yourname@manager.com
 
         Example: If your name is John, your email should be john@manager.com
 
-      # For Team Members :
+       For Team Members :
 
       -  Use the format: yourname@example.com
 
@@ -29,7 +28,7 @@
 
   4. ROLE BASED ACCESS :
 
-   # Manager Access:
+       Manager Access:
 
    -   Managers have full access to all features in the system.
 
@@ -39,7 +38,7 @@
 
    -   Managers can also view and generate reports.
 
-   # Team Member Access:
+       Team Member Access:
 
    -   Team Members can only access tasks that have been assigned to them.
 
@@ -53,43 +52,44 @@
  
  5. KEY FEATURES  :
  
-     #  User Authentication :
+       User Authentication :
     
        -  Login/Registration: Users can securely register and log in, with proper validation messages for input errors.
     
-     #  Task and Project Management :
+       Task and Project Management :
     
        -  CRUD Operations: Create, read, update, and delete projects and tasks.
        -  Detailed View: View project details, including title, description, deadlines, and assigned team members.
          
-     # Interactive Dashboards :
+      Interactive Dashboards :
     
        -  Visual Progress Tracking: Graphs and charts to visualize project status, deadlines, and task completion rates.
        -  Alerts and Notifications: Users receive alerts for approaching deadlines and task updates.
-     # Advanced Filtering and Sorting :
+     
+      Advanced Filtering and Sorting :
     
        -  Dynamic Filters: Users can filter tasks by categories, deadlines, priority levels, and status (e.g., completed, in-progress).
        -  Sorting Options: Sort tasks based on deadlines, priority, and other custom criteria.
      
-     # Responsive Design :
+      Responsive Design :
 
        -  Mobile Optimization: Utilizes Bootstrap for a responsive layout that works seamlessly on mobile devices and tablets.
        -  User-Centric Design: Focuses on a clean and intuitive UI for better user experience.
          
-     # State Management :
+      State Management :
     
        -  Global State Management: Implements Redux or Context API to manage global state for user sessions and project data efficiently.
        -  Real-time Updates: Ensures UI reflects changes in data promptly, providing a seamless experience.
          
-     # Form Management :
+      Form Management :
     
        -  Formik Integration: Uses Formik for managing form state and validation, ensuring a robust and user-friendly experience for creating and editing tasks.
     
-     # Routing :
+      Routing :
     
        -  React Router: Handles client-side routing to navigate between different views (e.g., dashboard, project details, user settings) without full page reloads.
     
-     # Documentation and Help :
+      Documentation and Help :
     
        -  Inline Help and Tooltips: Provides users with contextual help and tooltips to guide them through various functionalities.
 
@@ -102,11 +102,12 @@
        -  Implement your changes.
        -  Submit a pull request with a detailed description of your enhancements.
           
- 8. LICENSE  :
+ 7. LICENSE  :
 
        -  This project is licensed under the MIT License. See the LICENSE file for more information.
    
-       
+ 8. Acknowledgments  :
 
- 10. Acknowledgments  :
-           -  Thanks to the open-source community for their contributions and support in building this application.
+       -  Thanks to the open-source community for their contributions and support in building this application.
+   
+         
