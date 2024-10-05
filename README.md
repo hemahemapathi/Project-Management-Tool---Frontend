@@ -3,22 +3,25 @@
  
  1. OVERVIEW  :
     
-       - The frontend of the Project Management Tool is crafted with React.js and Bootstrap to create a user-friendly, responsive interface. It enables users to manage projects and
- 
- collaborate effectively within teams.
+       - The frontend of the Project Management Tool is crafted with React.js and Bootstrap to create a user-friendly, responsive interface.
+
+       - It enables users to manage projects and  collaborate effectively within teams.
+
    
- 2. ACCESS THE APPLICATION  :
+ 3. ACCESS THE APPLICATION  :
     
        -  Open your browser and navigate to http://localhost:3000.
 
- 3. LOGIN INSTRUCTIONS :
+ 4. LOGIN INSTRUCTIONS :
 
      Please follow the login instructions below based on your role in the system:
+
        For Managers :
 
        -   Use the format: yourname@manager.com
 
         Example: If your name is John, your email should be john@manager.com
+
 
        For Team Members :
 
@@ -28,7 +31,7 @@
 
       Ensure you have the correct credentials before logging in       
 
-  4. ROLE BASED ACCESS :
+  6. ROLE BASED ACCESS :
 
        Manager Access:
 
