@@ -1,9 +1,11 @@
- #  PROJECT MANAGEMENT TOOL
+ #  PROJECT MANAGEMENT TOOL - FRONTEND
  
  
  1. OVERVIEW  :
     
-       - The frontend of the Project Management Tool is crafted with React.js and Bootstrap to create a user-friendly, responsive interface. It enables users to manage projects and collaborate effectively within teams.
+       - The frontend of the Project Management Tool is crafted with React.js and Bootstrap to create a user-friendly, responsive interface. It enables users to manage projects and
+ 
+ collaborate effectively within teams.
    
  2. ACCESS THE APPLICATION  :
     
@@ -30,21 +32,21 @@
 
        Manager Access:
 
-   -   Managers have full access to all features in the system.
+     -   Managers have full access to all features in the system.
 
-   -   They can perform CRUD (Create, Read, Update, Delete) operations on all tasks and data.
+     -   They can perform CRUD (Create, Read, Update, Delete) operations on all tasks and data.
 
-   -   Managers are responsible for performing tasks that are not assigned to other users.
+     -   Managers are responsible for performing tasks that are not assigned to other users.
 
-   -   Managers can also view and generate reports.
+     -   Managers can also view and generate reports.
 
        Team Member Access:
 
-   -   Team Members can only access tasks that have been assigned to them.
+     -   Team Members can only access tasks that have been assigned to them.
 
-   -   They can view and update their own tasks but cannot create or delete tasks.
+     -   They can view and update their own tasks but cannot create or delete tasks.
 
-   -   Team Members can also view and generate reports, similar to Managers, but without broader administrative capabilities.
+     -   Team Members can also view and generate reports, similar to Managers, but without broader administrative capabilities.
 
    
    This ensures clarity between login instructions and the different access levels for each role.
@@ -59,26 +61,31 @@
        Task and Project Management :
     
        -  CRUD Operations: Create, read, update, and delete projects and tasks.
+      
        -  Detailed View: View project details, including title, description, deadlines, and assigned team members.
          
       Interactive Dashboards :
     
        -  Visual Progress Tracking: Graphs and charts to visualize project status, deadlines, and task completion rates.
+      
        -  Alerts and Notifications: Users receive alerts for approaching deadlines and task updates.
      
       Advanced Filtering and Sorting :
     
        -  Dynamic Filters: Users can filter tasks by categories, deadlines, priority levels, and status (e.g., completed, in-progress).
+      
        -  Sorting Options: Sort tasks based on deadlines, priority, and other custom criteria.
      
       Responsive Design :
 
        -  Mobile Optimization: Utilizes Bootstrap for a responsive layout that works seamlessly on mobile devices and tablets.
+      
        -  User-Centric Design: Focuses on a clean and intuitive UI for better user experience.
          
       State Management :
     
        -  Global State Management: Implements Redux or Context API to manage global state for user sessions and project data efficiently.
+      
        -  Real-time Updates: Ensures UI reflects changes in data promptly, providing a seamless experience.
          
       Form Management :
@@ -98,8 +105,11 @@
  6. CONTRIBUTION GUIDELINES  :
 
        -  We welcome contributions to the frontend! If you want to enhance the user interface or add new features:
+     
        -  Fork the repository.
+      
        -  Implement your changes.
+      
        -  Submit a pull request with a detailed description of your enhancements.
           
  7. LICENSE  :
