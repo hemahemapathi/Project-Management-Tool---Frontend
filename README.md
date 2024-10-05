@@ -14,11 +14,11 @@
 
  4. LOGIN INSTRUCTIONS :
 
-     Please follow the login instructions below based on your role in the system:
+    Please follow the login instructions below based on your role in the system:
 
        For Managers :
 
-       -   Use the format: yourname@manager.com
+       -  Use the format: yourname@manager.com
 
 
          Example: If your name is John, your email should be john@manager.com
@@ -26,12 +26,13 @@
 
        For Team Members :
 
-      -  Use the format: yourname@example.com
+       -  Use the format: yourname@example.com
 
 
         Example: If your name is Jane, your email should be jane@example.com
 
-      Ensure you have the correct credentials before logging in       
+
+     Ensure you have the correct credentials before logging in       
 
   6. ROLE BASED ACCESS :
 
@@ -121,7 +122,7 @@
 
        -  This project is licensed under the MIT License. See the LICENSE file for more information.
    
- 8. Acknowledgments  :
+ 8. ACKNOWLEDMENT  :
 
        -  Thanks to the open-source community for their contributions and support in building this application.
    
