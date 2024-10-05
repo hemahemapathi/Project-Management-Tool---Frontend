@@ -20,12 +20,14 @@
 
        -   Use the format: yourname@manager.com
 
-        Example: If your name is John, your email should be john@manager.com
+
+         Example: If your name is John, your email should be john@manager.com
 
 
        For Team Members :
 
       -  Use the format: yourname@example.com
+
 
         Example: If your name is Jane, your email should be jane@example.com
 
