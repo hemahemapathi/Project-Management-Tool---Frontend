@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/user';
+const API_URL = 'https://project-management-tool-backend-3f4s.onrender.com/api/user';
 
 export const registerUser = async (name, email, password, role) => {
   let registerEndpoint = `${API_URL}/register`;
